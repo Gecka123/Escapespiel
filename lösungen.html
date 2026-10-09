@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape-Spiel-Lösungen</title>
+</head>
+<body>
+    <form onsubmit="return checkPasswort1(event);">
+        <input id="lösungsFeld1" type="text" placeholder="1.Lösung (z.b. VioletG)"/>
+    </form><br>
+    <form onsubmit="return checkPasswort2(event);">
+        <input id="lösungsFeld2" type="text" placeholder="2.Lösung (z.b. VioletG)"/>
+    </form><br>
+    <form onsubmit="return checkPasswort3(event);">
+        <input id="lösungsFeld3" type="text" placeholder="3.Lösung (z.b. VioletG)"/>
+    </form><br>
+    <form onsubmit="return checkPasswort4(event);">
+        <input id="lösungsFeld4" type="text" placeholder="4.Lösung (z.b. VioletG)"/>
+    </form><br>
+    <script>
+        function checkPasswort1(event) {
+            event.preventDefault();
+            var passwortText = document.getElementById("lösungsFeld1").value;
+            
+            console.log("prüfe passwort: " + passwortText)
+            if (passwortText == "Ernesto300") {
+                alert("Korekt✅!");
+            }
+            else {
+                    alert("Falsch❌!");  
+                    return false;
+            }
+        }
+        function checkPasswort2(event) {
+            event.preventDefault();
+            var passwortText = document.getElementById("lösungsFeld2").value;
+            
+            console.log("prüfe passwort: " + passwortText)
+            if (passwortText == "Ernesto300") {
+                alert("Korekt✅!");
+            }
+            else {
+                    alert("Falsch❌!");  
+                    return false;
+            }
+        }
+        function checkPasswort3(event) {
+            event.preventDefault();
+            var passwortText = document.getElementById("lösungsFeld3").value;
+            
+            console.log("prüfe passwort: " + passwortText)
+            if (passwortText == "Ernesto300") {
+                alert("Korekt✅!");
+            }
+            else {
+                    alert("Falsch❌!");  
+                    return false;
+            }
+        }
+        function checkPasswort4(event) {
+            event.preventDefault();
+            var passwortText = document.getElementById("lösungsFeld4").value;
+            
+            console.log("prüfe passwort: " + passwortText)
+            if (passwortText == "Ernesto300") {
+                alert("Korekt✅!");
+            }
+            else {
+                    alert("Falsch❌!");  
+                    return false;
+            }
+        }
+    </script>
+</body>
+</html>
